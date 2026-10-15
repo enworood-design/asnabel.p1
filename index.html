@@ -1,0 +1,713 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body style="margin:0">
+<title>أول خطوة في سوق العمل</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+/* Layout: one continuous path. A sticky trail fills as you scroll (Skill > CV > Portfolio > Opportunity > Job/Client),
+   and steps, stairs and dotted routes repeat in every section. Warm Sanabel palette, light single theme by choice. */
+:root{
+  --paper:#FDF9F4; --white:#FFFFFF; --sand:#F7E8D7; --sand-deep:#EBCFB0; --line:#EAD7C2;
+  --orange:#E8772E; --cta:#BF5219; --cta-dark:#9F4212; --deep:#A5411A;
+  --brown:#3B2316; --brown-soft:#6B4A38;
+  --green:#46704A; --green-soft:#E4EFDD;
+  --font-display:"Cairo","Tajawal",system-ui,sans-serif;
+  --font-body:"IBM Plex Sans Arabic","Tajawal",system-ui,sans-serif;
+  --r-card:20px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{direction:rtl;font-family:var(--font-body);font-size:1.0625rem;line-height:1.8;background:var(--paper);color:var(--brown)}
+h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,.btn,.num{font-family:var(--font-display)}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.25}
+p{text-wrap:pretty}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brown);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1160px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(56px,9vw,104px)}
+h2{font-size:clamp(1.9rem,5.2vw,3.1rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:700}
+.ic{width:1.5rem;height:1.5rem;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sic{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.sec-head{display:grid;gap:14px;max-width:46rem;margin-bottom:clamp(28px,5vw,52px)}
+.sec-head p{color:var(--brown-soft)}
+.tatreez{height:16px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cpath d='M8 1l7 7-7 7-7-7zM24 1l7 7-7 7-7-7z' fill='none' stroke='%23BF5219' stroke-width='1.4'/%3E%3Ccircle cx='8' cy='8' r='1.6' fill='%23BF5219'/%3E%3Ccircle cx='24' cy='8' r='1.6' fill='%23BF5219'/%3E%3C/svg%3E");background-repeat:repeat-x;background-position:center;opacity:.55}
+.tatreez.light{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cpath d='M8 1l7 7-7 7-7-7zM24 1l7 7-7 7-7-7z' fill='none' stroke='%23FFFFFF' stroke-width='1.4'/%3E%3Ccircle cx='8' cy='8' r='1.6' fill='%23FFFFFF'/%3E%3Ccircle cx='24' cy='8' r='1.6' fill='%23FFFFFF'/%3E%3C/svg%3E");opacity:.4}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 30px;border-radius:999px;font-weight:800;font-size:1.15rem;line-height:1.2;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-primary{background:var(--cta);color:#fff;box-shadow:0 10px 24px rgba(191,82,25,.28)}
+.btn-primary:hover{background:var(--cta-dark);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--brown);color:var(--brown);background:transparent}
+.btn-ghost:hover{background:var(--brown);color:#fff}
+.btn-sm{min-height:44px;padding:0 20px;font-size:1rem}
+.btn-lg{min-height:64px;padding:0 44px;font-size:1.3rem}
+.btn .ic{width:1.3rem;height:1.3rem;stroke-width:2.2}
+.micro{font-size:.95rem;color:var(--brown-soft)}
+.cta-band{display:grid;justify-items:center;gap:10px;margin-top:clamp(32px,5vw,56px);text-align:center}
+
+/* Header + trail */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(253,249,244,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px 4px}
+.logo{display:flex;align-items:center;gap:12px;min-width:0}
+.logo-mark{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--cta);color:#fff;flex:none}
+.logo-mark .ic{width:1.6rem;height:1.6rem}
+.logo-text{display:grid;line-height:1.3;min-width:0}
+.logo-text b{font-family:var(--font-display);font-size:1.15rem;font-weight:800}
+.logo-text small{font-size:.75rem;color:var(--brown-soft)}
+.top .btn{display:none}
+@media(min-width:720px){.top .btn{display:inline-flex}}
+.trail{position:relative;height:20px;margin-inline:10px}
+.trail-line{position:absolute;top:6px;right:0;left:0;height:3px;border-radius:3px;background:var(--line)}
+.trail-fill{position:absolute;top:0;right:0;height:100%;width:0;border-radius:3px;background:var(--orange)}
+.st{position:absolute;top:0;right:calc(var(--p)*1%);transform:translateX(50%);width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--sand-deep);transition:background .25s,border-color .25s}
+.st.on{background:var(--orange);border-color:var(--cta)}
+.st em{display:none;position:absolute;top:16px;left:50%;transform:translateX(-50%);font-style:normal;font-size:.72rem;line-height:1.2;white-space:nowrap;color:var(--brown-soft)}
+@media(min-width:640px){.trail{height:36px}.st em{display:block}.st:first-of-type em{left:auto;right:-6px;transform:none}.st:last-of-type em{left:-6px;transform:none}}
+
+/* Hero */
+.hero{position:relative;background:var(--paper);overflow:hidden}
+.hero-grid{display:grid;gap:28px;align-items:center;padding-block:clamp(28px,6vw,64px) clamp(36px,6vw,72px)}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:48px}}
+.hero-copy{display:grid;gap:18px;justify-items:start;min-width:0}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--sand);color:var(--cta-dark);font-weight:600;font-size:.95rem;padding:6px 16px;border-radius:999px}
+.badge .ic{width:1.1rem;height:1.1rem}
+h1{font-size:clamp(2.7rem,8.6vw,5.3rem);font-weight:900;line-height:1.12}
+h1 em{font-style:normal;color:var(--cta)}
+.tagline{font-family:var(--font-display);font-weight:700;font-size:clamp(1.3rem,3.6vw,1.95rem);color:var(--brown-soft)}
+.lead{max-width:34rem}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;width:100%;max-width:34rem}
+.facts li{display:flex;align-items:center;gap:10px;background:#fff;padding:12px 14px;font-weight:600;font-size:.98rem;line-height:1.4;min-width:0}
+.facts .ic{color:var(--cta)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{position:relative;min-width:0}
+.hero-art svg{width:100%;height:auto;max-width:100%;display:block}
+.road{fill:none;stroke:#E6C29C;stroke-width:34;stroke-linecap:round;stroke-linejoin:round}
+.road-mid{fill:none;stroke:#fff;stroke-width:3;stroke-dasharray:2 13;stroke-linecap:round}
+.stn circle.c{fill:#fff;stroke:var(--cta);stroke-width:3}
+.stn .sic{color:var(--cta)}
+.stn.end circle.c{fill:var(--cta);stroke:#fff;stroke-width:4}
+.stn.end .sic{color:#fff}
+.chip rect{fill:#fff;stroke:var(--line);stroke-width:1.5}
+.chip text{font-family:var(--font-display);font-weight:700;font-size:13px;fill:var(--brown)}
+.chip.go rect{fill:var(--brown);stroke:var(--brown)}
+.chip.go text{fill:#fff}
+
+/* Problem */
+.problem{background:var(--white)}
+.q-grid{display:grid;gap:14px}
+@media(min-width:560px){.q-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.q-grid{grid-template-columns:repeat(4,1fr)}}
+.q-grid li{display:flex;align-items:flex-start;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px;font-weight:500;min-width:0}
+.q-grid .ic{width:1.3rem;height:1.3rem;margin-top:.3rem;color:var(--cta)}
+.highlight{margin-top:clamp(32px,6vw,64px);background:var(--brown);color:#fff;border-radius:28px;padding:clamp(28px,5vw,56px)}
+.highlight p{font-family:var(--font-display);font-weight:800;font-size:clamp(1.4rem,3.8vw,2.4rem);line-height:1.5;text-wrap:balance}
+.highlight .em{margin-top:6px}
+.highlight .em span{background:linear-gradient(transparent 62%,var(--cta) 62%);padding-inline:4px}
+
+/* Solution / journey */
+.solution{background:var(--sand)}
+.journey{position:relative;display:grid;gap:0;counter-reset:j}
+.journey li{position:relative;display:flex;align-items:center;gap:16px;padding-block:10px;font-family:var(--font-display);font-weight:700;font-size:1.15rem}
+.journey .dot{position:relative;z-index:1;display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:50%;background:#fff;border:3px solid var(--cta);color:var(--cta);font-weight:800}
+.journey li:not(:last-child)::after{content:"";position:absolute;right:21px;top:50%;height:100%;width:0;border-right:3px dotted var(--orange);z-index:0}
+.journey li:last-child .dot{background:var(--cta);color:#fff}
+@media(min-width:920px){
+  .journey{grid-template-columns:repeat(7,1fr);gap:8px}
+  .journey::before{content:"";position:absolute;top:32px;right:7%;left:7%;border-top:3px dotted var(--orange)}
+  .journey li{flex-direction:column;text-align:center;gap:12px;font-size:1.05rem}
+  .journey li:not(:last-child)::after{display:none}
+}
+
+/* Topics */
+.topics{background:var(--paper)}
+.t-grid{display:grid;gap:16px}
+@media(min-width:640px){.t-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.t-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1200px){.t-grid{grid-template-columns:repeat(4,1fr)}}
+.topic{display:grid;gap:8px;align-content:start;background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:22px;min-width:0;transition:transform .2s,box-shadow .2s}
+.topic:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(59,35,22,.09)}
+.topic .row{display:flex;align-items:center;justify-content:space-between}
+.topic .num{font-weight:900;font-size:2.1rem;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--orange)}
+.topic .ico{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--sand);color:var(--cta)}
+.topic p{font-size:.98rem;color:var(--brown-soft);line-height:1.7}
+
+/* Tracks */
+.tracks-sec{background:var(--white)}
+.fork-wrap{display:none}
+@media(min-width:860px){.fork-wrap{display:grid;justify-items:center;margin-bottom:6px}.fork{width:100%;height:56px;display:block}}
+.fork-pill{background:var(--sand);color:var(--cta-dark);font-weight:600;font-size:.92rem;padding:4px 16px;border-radius:999px}
+.tracks{display:grid;gap:20px}
+@media(min-width:860px){.tracks{grid-template-columns:1fr 1fr}}
+.track{display:grid;gap:12px;align-content:start;border-radius:28px;padding:clamp(24px,4vw,40px);color:#fff;min-width:0}
+.track-emp{background:var(--deep)}
+.track-free{background:var(--green)}
+.track-top{display:flex;align-items:center;gap:12px}
+.track-ic{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:rgba(255,255,255,.18)}
+.track-ic .ic{width:1.8rem;height:1.8rem}
+.track-en{font-family:var(--font-display);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;opacity:.9;direction:ltr}
+.track h3{font-size:clamp(1.6rem,3.4vw,2.1rem);font-weight:800}
+.track>p{opacity:.92}
+.chain{display:flex;flex-wrap:wrap;gap:10px 6px;margin-top:10px}
+.chain li{display:flex;align-items:center;gap:6px}
+.chain li span{font-family:var(--font-display);font-weight:700;font-size:.92rem;line-height:1.3;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3)}
+.chain li:not(:last-child)::after{content:"←";opacity:.75;font-weight:700}
+.tracks-note{margin-top:28px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--brown)}
+
+/* Outputs */
+.outputs{background:var(--brown);color:#fff}
+.out-grid{display:grid;gap:36px;align-items:start}
+@media(min-width:960px){.out-grid{grid-template-columns:.8fr 1.2fr;gap:56px}}
+.out-copy{display:grid;gap:18px;justify-items:start}
+.out-copy h2{font-size:clamp(2.1rem,6vw,3.6rem);font-weight:900;line-height:1.2}
+.out-copy h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.2rem,3vw,1.6rem);color:#F6C9A3}
+.out-copy .micro{color:#E5CDB8}
+.checklist{display:grid;gap:10px}
+@media(min-width:620px){.checklist{grid-template-columns:repeat(2,1fr)}}
+.checklist li{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);font-weight:500;min-width:0}
+.checklist .ck{display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:50%;background:var(--orange);color:var(--brown)}
+.checklist .ck .ic{width:1rem;height:1rem;stroke-width:3}
+
+/* Hands-on */
+.hands{background:var(--paper)}
+.stairs{display:grid;gap:12px;counter-reset:s}
+.stairs li{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 20px;font-family:var(--font-display);font-weight:800;font-size:1.2rem}
+.stairs li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:50%;background:var(--sand);color:var(--cta);font-size:1rem}
+.stairs li:last-child{background:var(--cta);color:#fff;border-color:var(--cta)}
+.stairs li:last-child::before{background:#fff}
+@media(min-width:900px){
+  .stairs{grid-template-columns:repeat(5,1fr);align-items:end;gap:14px}
+  .stairs li{flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:10px;padding:18px;border-radius:20px 20px 8px 8px;min-height:calc(110px + var(--i)*44px)}
+}
+.swaps{display:grid;gap:12px;margin-top:clamp(32px,5vw,56px)}
+.swaps li{display:grid;gap:4px;padding:16px 20px;background:var(--sand);border-radius:18px}
+.swaps .was{color:var(--brown-soft);text-decoration:line-through;text-decoration-color:var(--cta);text-decoration-thickness:2px}
+.swaps .now{font-family:var(--font-display);font-weight:800;font-size:1.15rem}
+@media(min-width:760px){.swaps li{grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}.swaps li::before{content:"";order:0}.swaps .arrow{display:block}}
+.swaps .arrow{display:none;color:var(--cta);font-weight:800;font-size:1.3rem}
+
+/* Project folder */
+.project{background:var(--sand)}
+.folder-wrap{position:relative;margin-top:34px}
+.folder-tab{position:absolute;top:-34px;right:28px;display:flex;align-items:center;gap:8px;height:36px;padding:0 20px;border-radius:14px 14px 0 0;background:var(--cta);color:#fff;font-family:var(--font-display);font-weight:700;font-size:.95rem}
+.folder{background:var(--cta);border-radius:12px 28px 28px 28px;padding:clamp(18px,4vw,36px)}
+.papers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:760px){.papers{grid-template-columns:repeat(3,1fr);gap:18px}}
+.paper{display:grid;gap:8px;align-content:start;background:#fff;border-radius:10px;padding:16px;box-shadow:0 6px 16px rgba(59,35,22,.18);min-width:0}
+.paper:nth-child(odd){transform:rotate(-1.2deg)}
+.paper:nth-child(even){transform:rotate(1deg)}
+.paper .ic{color:var(--cta)}
+.paper h4{font-weight:800;font-size:1rem;line-height:1.35;direction:ltr;text-align:right}
+.paper i{display:block;height:6px;border-radius:3px;background:var(--sand)}
+.paper i:nth-of-type(2){width:80%}.paper i:nth-of-type(3){width:55%}
+.folder-note{margin-top:20px;display:flex;align-items:center;gap:10px;font-weight:600}
+.folder-note .ic{color:var(--green)}
+
+/* For whom */
+.whom{background:var(--paper)}
+.pills{display:flex;flex-wrap:wrap;gap:12px}
+.pills li{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 20px;font-weight:600;min-width:0}
+.pills .ic{color:var(--cta)}
+.nobar{margin-top:clamp(28px,5vw,48px);display:flex;align-items:center;gap:16px;background:var(--green-soft);color:#2F4F33;border-radius:24px;padding:clamp(20px,4vw,32px)}
+.nobar .ic{width:2.2rem;height:2.2rem;stroke-width:2.4;color:var(--green)}
+.nobar p{font-family:var(--font-display);font-weight:800;font-size:clamp(1.2rem,3.2vw,1.9rem);line-height:1.4}
+
+/* About */
+.about{background:var(--white)}
+.about-grid{display:grid;gap:36px;align-items:start}
+@media(min-width:960px){.about-grid{grid-template-columns:1fr 1fr;gap:64px}}
+.about-copy{display:grid;gap:18px}
+.about-copy p{color:var(--brown-soft)}
+.stats{display:grid;gap:0}
+.stats li{display:flex;align-items:center;gap:20px;padding-block:20px;border-bottom:2px dotted var(--sand-deep)}
+.stats li:last-child{border-bottom:0}
+.stats .big{min-width:5.6rem;font-family:var(--font-display);font-weight:900;font-size:clamp(2.6rem,7vw,3.8rem);line-height:1;color:var(--cta);direction:ltr;text-align:right}
+.stats b{display:block;font-family:var(--font-display);font-size:1.1rem;line-height:1.4}
+.stats span{color:var(--brown-soft);font-size:.95rem}
+
+/* Emotion */
+.emotion{position:relative;background:var(--deep);color:#fff;overflow:hidden}
+.emotion .wrap{position:relative;z-index:1}
+.emo{display:grid;gap:22px;max-width:46rem;padding-block:clamp(56px,10vw,120px)}
+.emo h2{font-size:clamp(2.2rem,6.6vw,4rem);font-weight:900;line-height:1.2}
+.emo .soft{display:grid;gap:2px;font-size:clamp(1.15rem,3vw,1.5rem);opacity:.92}
+.emo .q{font-family:var(--font-display);font-weight:700;font-size:1.2rem;color:#FFD9B8}
+.emo .end{font-family:var(--font-display);font-weight:800;font-size:clamp(1.5rem,4.4vw,2.5rem);line-height:1.4}
+.emo .end span{display:block;color:#FFD9B8}
+.emo-deco{position:absolute;left:-20px;bottom:0;width:min(520px,70%);height:auto;opacity:.16;z-index:0}
+
+/* Final CTA */
+.final{background:var(--sand);text-align:center}
+.final .wrap{display:grid;justify-items:center;gap:18px}
+.final p.lead{max-width:34rem;color:var(--brown-soft)}
+.seats{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--sand-deep);border-radius:999px;padding:6px 18px;font-family:var(--font-display);font-weight:800;color:var(--cta-dark)}
+
+/* Footer */
+.foot{background:var(--brown);color:#EBD9C8;padding-block:clamp(40px,6vw,64px) calc(40px + env(safe-area-inset-bottom,0px))}
+.foot-grid{display:grid;gap:28px}
+.foot .logo-text b{color:#fff}
+.foot .logo-text small{color:#CDB6A2}
+.foot h4{font-size:1.25rem;font-weight:800;color:#fff}
+.foot .motto{font-family:var(--font-display);font-weight:700;font-size:clamp(1.1rem,2.6vw,1.4rem);color:#FFD9B8}
+.social{display:flex;gap:12px}
+.social a{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);color:#fff;transition:background .2s}
+.social a:hover{background:var(--cta);border-color:var(--cta)}
+.copy{border-top:1px solid rgba(255,255,255,.14);margin-top:32px;padding-top:20px;font-size:.88rem;color:#CDB6A2}
+@media(max-width:719px){.foot{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}}
+
+/* Sticky mobile CTA + toast */
+.sticky-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(253,249,244,.96);border-top:1px solid var(--line);transition:transform .25s,visibility .25s}
+.sticky-cta .btn{width:100%}
+.sticky-cta.is-hidden{transform:translateY(110%);visibility:hidden}
+@media(max-width:719px){.sticky-cta{display:block}}
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:70;width:max-content;max-width:min(92vw,440px);background:var(--brown);color:#fff;padding:12px 18px;border-radius:14px;font-size:.95rem;line-height:1.6;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+</style>
+
+<div id="page" dir="rtl" lang="ar">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M3 13h18"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+<symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M4 10v4h3l8 4V6L7 10z"/><path d="M18 9a4 4 0 010 6"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v5"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 00-14-4M4 5v4h4M4 13a8 8 0 0014 4M20 19v-4h-4"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></symbol>
+<symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.3 0 2-.8 2-1.8 0-1.2-1-1.4-1-2.4 0-1 .8-1.8 2-1.8h2.5A3.5 3.5 0 0021 11.5C21 6.8 17 3 12 3z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 3c3.5 2 5 6 4 11l-4 3-4-3c-1-5 .5-9 4-11z"/><circle cx="12" cy="10" r="1.6"/><path d="M8 15l-3 1 1.5-3.5M16 15l3 1-1.5-3.5M12 17v4"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-1 .7-1.5 1.2-1.5 2.5M12 17h.01"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></symbol>
+<symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+<symbol id="i-fork" viewBox="0 0 24 24"><path d="M12 21v-8M12 13c0-4-6-4-6-9M12 13c0-4 6-4 6-9"/></symbol>
+<symbol id="i-wheat" viewBox="0 0 24 24"><path d="M12 22V9"/><path d="M12 9c-2.5 0-4-1.7-4-4 2.3 0 4 1.5 4 4zM12 9c2.5 0 4-1.7 4-4-2.3 0-4 1.5-4 4zM12 15c-2.5 0-4-1.7-4-4 2.3 0 4 1.5 4 4zM12 15c2.5 0 4-1.7 4-4-2.3 0-4 1.5-4 4zM12 2.5c-1.2 1-1.2 3 0 4 1.2-1 1.2-3 0-4z"/></symbol>
+<symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></symbol>
+<symbol id="i-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.7"/><circle cx="17" cy="7" r=".8"/></symbol>
+<symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 1112 20a8 8 0 01-3.8-1z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13c0-2 4-2.5 4 0v3"/></symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="logo" href="#top" aria-label="حاضنة مركز سنابل">
+      <span class="logo-mark"><svg class="ic" aria-hidden="true"><use href="#i-wheat"/></svg></span>
+      <span class="logo-text"><b>حاضنة سنابل</b><small>مركز سنابل الخير للتدريب والتطوير</small></span>
+    </a>
+    <a class="btn btn-primary btn-sm" data-register href="#">سجّل الآن</a>
+  </div>
+  <div class="wrap">
+    <div class="trail" id="trail" aria-hidden="true">
+      <div class="trail-line"><i class="trail-fill" id="trailFill"></i></div>
+      <span class="st" style="--p:0"><em>مهارة</em></span>
+      <span class="st" style="--p:25"><em>سيرة ذاتية</em></span>
+      <span class="st" style="--p:50"><em>ملف أعمال</em></span>
+      <span class="st" style="--p:75"><em>فرصة</em></span>
+      <span class="st" style="--p:100"><em>وظيفة / عميل</em></span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 01 HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="badge"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg>برنامج تدريبي عملي للخريجين</span>
+      <h1><em>أول خطوة</em> في سوق العمل</h1>
+      <p class="tagline">من مهارتك… إلى أول فرصة</p>
+      <p class="lead">برنامج تدريبي عملي يساعد الخريجين على الاستعداد لسوق العمل، بناء هويتهم المهنية، تطوير أدواتهم، الوصول إلى الوظائف والعملاء، وبدء أول خطوة نحو دخل حقيقي.</p>
+      <ul class="facts">
+        <li><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>6 أسابيع</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg>تدريب عملي</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-fork"/></svg>مساران مهنيان</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg>تطبيق على فرص حقيقية</li>
+      </ul>
+      <div class="cta-row" id="hero-cta">
+        <a class="btn btn-primary" data-register href="#">سجّل الآن<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#program">اكتشف البرنامج</a>
+      </div>
+      <p class="micro">التسجيل مجاني — عبّئ نموذج التسجيل للانضمام إلى الدفعة التجريبية.</p>
+    </div>
+
+    <figure class="hero-art">
+      <svg viewBox="0 0 560 480" role="img" aria-labelledby="artT">
+        <title id="artT">مسار مهني يبدأ بخريج عند أول الطريق، ويمر بمحطات المهارة والسيرة الذاتية وملف الأعمال والفرصة، وينتهي بوظيفة أو عميل</title>
+        <circle cx="300" cy="245" r="215" fill="var(--sand)"/>
+        <g fill="none" stroke="var(--orange)" stroke-width="2" opacity=".55" aria-hidden="true">
+          <path d="M70 90l14 14-14 14-14-14z"/><path d="M108 62l8 8-8 8-8-8z"/><path d="M500 200l10 10-10 10-10-10z"/><path d="M52 330l8 8-8 8-8-8z"/>
+        </g>
+        <path class="road" d="M470 425C445 425 428 380 400 350C372 322 300 345 240 335C180 325 150 300 170 240C188 188 240 205 290 175C335 148 350 100 400 75"/>
+        <path class="road-mid" d="M470 425C445 425 428 380 400 350C372 322 300 345 240 335C180 325 150 300 170 240C188 188 240 205 290 175C335 148 350 100 400 75"/>
+
+        <g class="stn" transform="translate(400 350)"><circle class="c" r="22"/><use class="sic" href="#i-bulb" x="-11" y="-11" width="22" height="22"/></g>
+        <g class="stn" transform="translate(240 335)"><circle class="c" r="22"/><use class="sic" href="#i-doc" x="-11" y="-11" width="22" height="22"/></g>
+        <g class="stn" transform="translate(170 240)"><circle class="c" r="22"/><use class="sic" href="#i-folder" x="-11" y="-11" width="22" height="22"/></g>
+        <g class="stn" transform="translate(290 175)"><circle class="c" r="22"/><use class="sic" href="#i-target" x="-11" y="-11" width="22" height="22"/></g>
+        <g transform="translate(400 75)"><circle r="46" fill="var(--orange)" opacity=".2"/></g>
+        <g class="stn end" transform="translate(400 75)"><circle class="c" r="30"/><use class="sic" href="#i-briefcase" x="-15" y="-15" width="30" height="30"/></g>
+        <g fill="none" stroke="var(--cta)" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M452 40l10-8M460 70h14M448 100l10 8"/></g>
+
+        <g class="chip" transform="translate(460 350)"><rect x="-28" y="-13" width="56" height="26" rx="13"/><text y="5" text-anchor="middle">مهارة</text></g>
+        <g class="chip" transform="translate(240 385)"><rect x="-59" y="-13" width="118" height="26" rx="13"/><text y="5" text-anchor="middle">السيرة الذاتية</text></g>
+        <g class="chip" transform="translate(90 240)"><rect x="-48" y="-13" width="96" height="26" rx="13"/><text y="5" text-anchor="middle">ملف الأعمال</text></g>
+        <g class="chip" transform="translate(252 132)"><rect x="-25" y="-13" width="50" height="26" rx="13"/><text y="5" text-anchor="middle">فرصة</text></g>
+        <g class="chip" transform="translate(304 50)"><rect x="-56" y="-13" width="112" height="26" rx="13"/><text y="5" text-anchor="middle">وظيفة أو عميل</text></g>
+        <g class="chip go" transform="translate(425 462)"><rect x="-50" y="-13" width="100" height="26" rx="13"/><text y="5" text-anchor="middle">ابدأ من هنا</text></g>
+
+        <g transform="translate(520 0)" aria-hidden="true">
+          <ellipse cx="0" cy="466" rx="28" ry="5" fill="#3B2316" opacity=".1"/>
+          <rect x="-10" y="438" width="9" height="28" rx="4.5" fill="var(--brown)"/>
+          <rect x="2" y="438" width="9" height="28" rx="4.5" fill="var(--brown)"/>
+          <rect x="-25" y="408" width="11" height="28" rx="5" fill="var(--cta-dark)"/>
+          <path d="M-15 440V415a13 13 0 0113-13h4a13 13 0 0113 13v25z" fill="var(--orange)"/>
+          <circle cx="0" cy="388" r="12" fill="#E7B087"/>
+          <path d="M-24 372l24-11 24 11-24 11z" fill="var(--brown)"/>
+          <path d="M22 373v14" stroke="var(--cta)" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="389" r="2.4" fill="var(--cta)"/>
+          <rect x="11" y="420" width="22" height="28" rx="3" fill="#fff" stroke="var(--brown)" stroke-width="2"/>
+          <path d="M16 428h12M16 434h12M16 440h7" stroke="var(--brown)" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </figure>
+  </div>
+  <div class="tatreez" aria-hidden="true"></div>
+</section>
+
+<!-- 02 PROBLEM -->
+<section class="sec problem" id="problem">
+  <div class="wrap">
+    <div class="sec-head"><h2>تخرجت… ولكن ماذا بعد؟</h2></div>
+    <ul class="q-grid">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>لا تعرف من أين تبدأ البحث عن وظيفة.</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>لا تعرف كيف تعرض مهاراتك.</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>CV لا يعكس قدراتك.</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>لا تمتلك Portfolio قويًا.</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>لا تعرف كيف تبدأ العمل الحر.</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>لا تعرف كيف تصل إلى العملاء.</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>تتقدم للوظائف ولا تحصل على رد.</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>لديك مهارة، لكن لا تعرف كيف تحولها إلى فرصة.</li>
+    </ul>
+    <div class="highlight">
+      <p>المشكلة ليست دائمًا في امتلاك المهارة…</p>
+      <p class="em"><span>أحيانًا المشكلة في معرفة كيف تصل بها إلى السوق.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 SOLUTION -->
+<section class="sec solution" id="program">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>هنا تبدأ أول خطوة</h2>
+      <p>"أول خطوة في سوق العمل" ليس برنامجًا تدريبيًا تقليديًا يعتمد على المحاضرات فقط، بل رحلة عملية تساعد الخريج على بناء ملفه المهني، اكتشاف الفرص، والتدرب على الوصول إليها.</p>
+    </div>
+    <ol class="journey">
+      <li><span class="dot">1</span>اكتشف نفسك</li>
+      <li><span class="dot">2</span>طوّر مهارتك</li>
+      <li><span class="dot">3</span>اعرض قيمتك</li>
+      <li><span class="dot">4</span>ابنِ ملفك المهني</li>
+      <li><span class="dot">5</span>ابحث عن الفرص</li>
+      <li><span class="dot">6</span>تواصل</li>
+      <li><span class="dot">7</span>ابدأ</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 04 TOPICS -->
+<section class="sec topics" id="topics">
+  <div class="wrap">
+    <div class="sec-head"><h2>ماذا ستتعلم؟</h2></div>
+    <div class="t-grid">
+      <article class="topic"><div class="row"><span class="num">01</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg></span></div><h3>الجاهزية لسوق العمل</h3><p>افهم السوق وحدّد وجهتك المهنية.</p></article>
+      <article class="topic"><div class="row"><span class="num">02</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></span></div><h3>تحويل المهارة إلى خدمة قابلة للبيع</h3><p>حوّل ما تتقنه إلى عرض واضح له سعر.</p></article>
+      <article class="topic"><div class="row"><span class="num">03</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg></span></div><h3>التسويق الشخصي Personal Branding</h3><p>قدّم نفسك بصورة مهنية يثق بها الآخرون.</p></article>
+      <article class="topic"><div class="row"><span class="num">04</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg></span></div><h3>Portfolio وإثبات المهارة</h3><p>اعرض أعمالًا حقيقية تتحدث عنك.</p></article>
+      <article class="topic"><div class="row"><span class="num">05</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg></span></div><h3>البحث عن الوظائف والتقديم الذكي</h3><p>قدّم على الفرص المناسبة برسالة تلفت الانتباه.</p></article>
+      <article class="topic"><div class="row"><span class="num">06</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span></div><h3>منصات العمل الحر والعمل عن بُعد</h3><p>افتح حسابك وابدأ على المنصات المناسبة.</p></article>
+      <article class="topic"><div class="row"><span class="num">07</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-megaphone"/></svg></span></div><h3>الوصول المباشر للفرص والعملاء</h3><p>تواصل مع أصحاب العمل دون انتظار إعلان.</p></article>
+      <article class="topic"><div class="row"><span class="num">08</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-tag"/></svg></span></div><h3>البيع والتفاوض</h3><p>اشرح قيمتك واتفق على سعر عادل.</p></article>
+      <article class="topic"><div class="row"><span class="num">09</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg></span></div><h3>مهارات العمل الاحترافي</h3><p>التزام وتنظيم وتواصل يحفظ ثقة من تعمل معهم.</p></article>
+      <article class="topic"><div class="row"><span class="num">10</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg></span></div><h3>الذكاء الاصطناعي لرفع الإنتاجية</h3><p>أنجز أكثر في وقت أقل بأدوات تناسب عملك.</p></article>
+      <article class="topic"><div class="row"><span class="num">11</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span></div><h3>صناعة المحتوى لجذب الفرص</h3><p>انشر ما يعرّف الناس بمهارتك.</p></article>
+      <article class="topic"><div class="row"><span class="num">12</span><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg></span></div><h3>مقابلات العمل والتواصل المهني</h3><p>تدرّب على الأسئلة وأجب بثقة.</p></article>
+    </div>
+    <div class="cta-band">
+      <a class="btn btn-primary" data-register href="#">ابدأ التسجيل<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <p class="micro">التسجيل مجاني — عبّئ نموذج التسجيل للانضمام إلى الدفعة التجريبية.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 TRACKS -->
+<section class="sec tracks-sec" id="tracks">
+  <div class="wrap">
+    <div class="sec-head"><h2>اختر المسار الذي يناسبك</h2></div>
+    <div class="fork-wrap" aria-hidden="true">
+      <span class="fork-pill">المراحل المشتركة</span>
+      <svg class="fork" viewBox="0 0 400 56" preserveAspectRatio="none"><path d="M200 0V16C200 34 100 26 100 52M200 16C200 34 300 26 300 52" fill="none" stroke="var(--orange)" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+    </div>
+    <div class="tracks">
+      <article class="track track-emp">
+        <div class="track-top"><span class="track-ic"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></span><span class="track-en">Employment Track</span></div>
+        <h3>مسار التوظيف</h3>
+        <p>للخريجين الذين يستهدفون وظيفة.</p>
+        <ol class="chain">
+          <li><span>CV</span></li><li><span>LinkedIn</span></li><li><span>Job Search</span></li><li><span>Applications</span></li><li><span>Interviews</span></li><li><span>Employment</span></li>
+        </ol>
+      </article>
+      <article class="track track-free">
+        <div class="track-top"><span class="track-ic"><svg class="ic" aria-hidden="true"><use href="#i-laptop"/></svg></span><span class="track-en">Freelance &amp; Remote Track</span></div>
+        <h3>مسار العمل الحر والعمل عن بُعد</h3>
+        <p>للخريجين الذين يمتلكون مهارة قابلة للبيع.</p>
+        <ol class="chain">
+          <li><span>Skill</span></li><li><span>Service</span></li><li><span>Portfolio</span></li><li><span>Platforms</span></li><li><span>Outreach</span></li><li><span>Client</span></li><li><span>Income</span></li>
+        </ol>
+      </article>
+    </div>
+    <p class="tracks-note">تبدأ جميع المراحل المشتركة معًا، ثم يختار كل متدرب المسار الأنسب لأهدافه ومهاراته.</p>
+    <div class="cta-band">
+      <a class="btn btn-primary" data-register href="#">سجّل الآن<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 06 OUTPUTS -->
+<section class="sec outputs" id="outputs">
+  <div class="wrap out-grid">
+    <div class="out-copy">
+      <h2>لن تخرج بشهادة فقط…</h2>
+      <h3>ستخرج بملف مهني جاهز للاستخدام.</h3>
+      <a class="btn btn-primary" data-register href="#">سجّل الآن<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <p class="micro">التسجيل مجاني — عبّئ نموذج التسجيل للانضمام إلى الدفعة التجريبية.</p>
+    </div>
+    <ul class="checklist">
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>Career Map</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>CV احترافي</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>LinkedIn Profile</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>Bio وPersonal Brand</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>Portfolio</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>3 نماذج أعمال</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>خدمة قابلة للبيع</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>حسابات مهنية على المنصات المناسبة</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>قائمة فرص حقيقية</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>قائمة عملاء محتملين</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>نماذج رسائل التقديم والتواصل</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>Mock Interview</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>أدوات AI للعمل</li>
+      <li><span class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>خطة 90 يومًا بعد التدريب</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 07 HANDS-ON -->
+<section class="sec hands" id="hands-on">
+  <div class="wrap">
+    <div class="sec-head"><h2>تعلّم ← طبّق ← ابنِ ← تواصل ← تقدّم</h2></div>
+    <ol class="stairs">
+      <li style="--i:0">تعلّم</li>
+      <li style="--i:1">طبّق على نفسك</li>
+      <li style="--i:2">ابنِ أدواتك</li>
+      <li style="--i:3">تواصل مع الفرص</li>
+      <li style="--i:4">ابدأ</li>
+    </ol>
+    <ul class="swaps">
+      <li><span class="was">بدل أن تتعلم كيف تكتب CV</span><span class="arrow" aria-hidden="true">←</span><span class="now">ستكتب CV الخاص بك.</span></li>
+      <li><span class="was">بدل أن تتعلم عن Portfolio</span><span class="arrow" aria-hidden="true">←</span><span class="now">ستبني Portfolio الخاص بك.</span></li>
+      <li><span class="was">بدل أن تتعلم عن المقابلات</span><span class="arrow" aria-hidden="true">←</span><span class="now">ستخوض Mock Interview.</span></li>
+      <li><span class="was">وبدل أن تنهي التدريب بشهادة فقط</span><span class="arrow" aria-hidden="true">←</span><span class="now">ستنهيه بملف مهني جاهز.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 08 PROJECT -->
+<section class="sec project" id="project">
+  <div class="wrap">
+    <div class="sec-head"><h2>مشروعك النهائي: ملفك المهني الجاهز لسوق العمل</h2></div>
+    <div class="folder-wrap">
+      <div class="folder-tab"><svg class="ic" aria-hidden="true" style="width:1.1rem;height:1.1rem"><use href="#i-folder"/></svg>ملفك المهني</div>
+      <div class="folder">
+        <div class="papers">
+          <div class="paper"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg><h4>CV</h4><i></i><i></i><i></i></div>
+          <div class="paper"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg><h4>LinkedIn</h4><i></i><i></i><i></i></div>
+          <div class="paper"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg><h4>Portfolio</h4><i></i><i></i><i></i></div>
+          <div class="paper"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg><h4>Service / Target Job</h4><i></i><i></i><i></i></div>
+          <div class="paper"><svg class="ic" aria-hidden="true"><use href="#i-megaphone"/></svg><h4>Outreach Plan</h4><i></i><i></i><i></i></div>
+          <div class="paper"><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg><h4>90-Day Career Plan</h4><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+    <p class="folder-note"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>تسلّم هذا الملف كاملًا في نهاية البرنامج.</p>
+  </div>
+</section>
+
+<!-- 09 WHOM -->
+<section class="sec whom" id="whom">
+  <div class="wrap">
+    <div class="sec-head"><h2>هل البرنامج مناسب لك؟</h2></div>
+    <ul class="pills">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg>الخريجون الجدد</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg>الباحثون عن فرصة عمل</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg>أصحاب المهارات الرقمية والتقنية</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-palette"/></svg>أصحاب المهارات الإبداعية</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-laptop"/></svg>الراغبون في العمل الحر</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>الراغبون في العمل عن بُعد</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-rocket"/></svg>من يمتلك مهارة لكنه لا يعرف كيف يحولها إلى فرصة</li>
+    </ul>
+    <div class="nobar"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><p>لا يشترط أن تكون لديك خبرة عمل سابقة.</p></div>
+  </div>
+</section>
+
+<!-- 10 ABOUT -->
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <h2>من حاضنة سنابل… إلى فرصة</h2>
+      <p>حاضنة سنابل لتمكين الشباب وبناء الفرص تعمل على تطوير مهارات الشباب وربط التدريب بالفرص، ومساعدتهم على الانتقال من التعلم إلى العمل والإنتاج والاستقلال المهني.</p>
+    </div>
+    <ul class="stats">
+      <li><span class="big">+80</span><div><b>مشروعًا وخدمة رقمية وتقنية</b><span>أفكار خرجت من الورق إلى الواقع.</span></div></li>
+      <li><span class="big">+45</span><div><b>متدربًا في برامج الذكاء الاصطناعي والتحول الرقمي</b><span>مهارات جديدة لسوق يتغير.</span></div></li>
+      <li><span class="big">+2050</span><div><b>مستفيدًا من البرامج التعليمية</b><span>أثر يتسع مع كل دفعة جديدة.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 11 EMOTION -->
+<section class="emotion" id="why">
+  <div class="tatreez light" aria-hidden="true"></div>
+  <svg class="emo-deco" viewBox="0 0 400 260" aria-hidden="true"><path d="M0 250h80v-48h80v-48h80v-48h80v-48h80" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/><path d="M392 58V8l36 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><path d="M0 250h80M80 202h80M160 154h80M240 106h80" stroke="#fff" stroke-width="2" stroke-dasharray="3 9" fill="none"/></svg>
+  <div class="wrap">
+    <div class="emo">
+      <h2>لأن البداية هي أصعب خطوة…</h2>
+      <div class="soft"><span>قد تكون لديك شهادة.</span><span>قد تكون لديك مهارة.</span><span>وقد تكون لديك طموحات كبيرة.</span></div>
+      <p class="q">لكن السؤال الحقيقي:</p>
+      <h2>ماذا ستفعل بهذه المهارة؟</h2>
+      <p class="end"><span>لا تنتظر الفرصة…</span>تعلّم كيف تصل إليها.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 12 FINAL CTA -->
+<section class="sec final" id="join">
+  <div class="wrap">
+    <h2>مستعد تبدأ أول خطوة؟</h2>
+    <p class="lead">ابدأ ببناء ملفك المهني، واكتشف الطريق الأنسب لك نحو الوظيفة أو العمل الحر.</p>
+    <div id="final-cta"><a class="btn btn-primary btn-lg" data-register href="#">سجّل الآن<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    <span class="seats">المقاعد محدودة</span>
+    <p class="micro">التسجيل مجاني — عبّئ نموذج التسجيل للانضمام إلى الدفعة التجريبية.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="logo" href="#top" aria-label="حاضنة مركز سنابل">
+        <span class="logo-mark"><svg class="ic" aria-hidden="true"><use href="#i-wheat"/></svg></span>
+        <span class="logo-text"><b>حاضنة سنابل</b><small>مركز سنابل الخير للتدريب والتطوير</small></span>
+      </a>
+      <h4>حاضنة سنابل لتمكين الشباب وبناء الفرص</h4>
+      <p class="motto">من غزة… نزرع الخير، نمكّن الشباب، ونبني الفرص.</p>
+      <!-- ضع روابط حسابات التواصل الاجتماعي مكان # -->
+      <div class="social">
+        <a href="#" aria-label="فيسبوك"><svg class="ic" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        <a href="#" aria-label="إنستغرام"><svg class="ic" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        <a href="#" aria-label="واتساب"><svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+        <a href="#" aria-label="لينكدإن"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+      </div>
+    </div>
+    <p class="copy">حاضنة مركز سنابل الخير للتدريب والتطوير</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta"><a class="btn btn-primary" data-register href="#">سجّل الآن<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+</div>
+
+<script>
+/* ===== رابط نموذج التسجيل: عدّله من هنا فقط ===== */
+const GOOGLE_FORM_URL = "ضع_رابط_جوجل_فورم_هنا";
+/* جميع أزرار «سجّل الآن» و«ابدأ التسجيل» تحمل الوسم data-register وتفتح الرابط أعلاه في نفس النافذة. */
+
+(function () {
+  function isValidUrl(u) {
+    try { var x = new URL(u); return x.protocol === "https:" || x.protocol === "http:"; }
+    catch (e) { return false; }
+  }
+  function toast(msg) {
+    var t = document.getElementById("toast");
+    t.textContent = msg; t.hidden = false;
+    clearTimeout(toast.timer);
+    toast.timer = setTimeout(function () { t.hidden = true; }, 4500);
+  }
+  var ready = isValidUrl(GOOGLE_FORM_URL);
+  document.querySelectorAll("[data-register]").forEach(function (a) {
+    a.removeAttribute("target");
+    a.setAttribute("href", ready ? GOOGLE_FORM_URL : "#");
+    a.addEventListener("click", function (e) {
+      if (!ready) {
+        e.preventDefault();
+        toast("لم يُضَف رابط النموذج بعد. ضع رابط Google Form في المتغير GOOGLE_FORM_URL داخل الكود.");
+      }
+    });
+  });
+
+  /* المسار العلوي: يمتلئ مع التمرير */
+  var fill = document.getElementById("trailFill");
+  var sts = document.querySelectorAll(".trail .st");
+  function updateTrail() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    fill.style.width = (p * 100) + "%";
+    sts.forEach(function (s, i) { s.classList.toggle("on", p >= i * 0.25 - 0.001); });
+  }
+  window.addEventListener("scroll", updateTrail, { passive: true });
+  window.addEventListener("resize", updateTrail);
+  updateTrail();
+
+  /* الزر الثابت على الهاتف: يختفي عندما يظهر زر التسجيل الرئيسي أو النهائي */
+  var bar = document.getElementById("stickyCta");
+  if ("IntersectionObserver" in window && bar) {
+    var seen = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { seen[en.target.id] = en.isIntersecting; });
+      bar.classList.toggle("is-hidden", !!(seen["hero-cta"] || seen["final-cta"]));
+    });
+    ["hero-cta", "final-cta"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
+
+</body></html>
